@@ -40,7 +40,8 @@ ma_variable = 5
 ```
 
 Toutes les variables commencent par une minuscule et les espaces sont simulées par le signe `_`.
-:no_entry_sign: Ne pas utiliser d'accents ou de signes spéciaux dans les noms de variables, commentaires, ...
+
+:x: Ne pas utiliser d'accents ou de signes spéciaux dans les noms de variables, commentaires, ...
 
 ```python
 # a ne pas pas faire
