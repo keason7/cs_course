@@ -232,4 +232,53 @@ radius = 2.2
 area = pi * (radius ** 2)
 ```
 
+## La fonction main
+
+Lorsque que l'on écrit le script principal (celui qui va être lancé par l'utilisateur), il est courant d'écrire le code de la façon suivante.
+
+### test.py
+
+```python
+# definition de la fonction main (fonction principale)
+def main():
+    print("Hello world")
+
+# impose que l'execution de main() se fasse uniquement si ce script est lancé de façon direct: python test.py
+if __name__=="__main__":
+    main()
+```
+
+La variable `__name__` est une variable spéciale de python dont la valeur est automatiquement déterminée en fonction de la façon dont un script est exécuté.
+
+Ici la valeur de `__name__` est `"__main__"` car c'est le script que l'on va lancer.
+
+Si l'on crée un nouveau fichier `test1.py` et que l'on modifie le code:
+
+### test1.py
+
+```python
+print(__name__)
+```
+
+### test.py
+
+```python
+import test1
+
+def main():
+    print(__name__)
+
+if __name__=="__main__":
+    main()
+```
+
+On retrouvera dans le terminal:
+
+```bash
+test_1
+__main__
+```
+
+`__name__` est seulement égal à `"__main__"` pour le fichier exécuté directement mais vaudra une autre valeur pour les fichiers importés.
+
 ## Exercice
