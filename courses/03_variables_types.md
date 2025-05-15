@@ -183,6 +183,13 @@ print("Je m'appelle " + prenom + " " + nom + " et j'ai " + str(age) + " ans.")
 print(f"Je m'appelle {prenom} {nom} et j'ai {age} ans.")
 ```
 
+Voici quelques caractères spéciaux des chaînes de caractères:
+
+- Saut de ligne: `\n`
+- Tabulation: `\t`
+- Backslash `\\`
+- Délimiteur: `\'` ou `\"`
+
 ## Les opérateurs numérique
 
 Voici les opérateurs principaux pour des valeures numériques
