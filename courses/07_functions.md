@@ -4,6 +4,8 @@
 
 Lors de l'écriture d'un programme, il peut devenir très fastidieux de relire et comprendre simplement le programme au fur et à mesure du développement. En effet, plus on augmente le nombre de lignes de code, plus la lecture devient complexe. De plus, cela peut amener à dupliquer certaines zones de code, rendant la lecture fastidieuse.
 
+![image](./assets/07/function_schema.png)
+
 Afin de pouvoir simplifier le code, on utilise des fonctions. Une fonction est une suite d'instructions que l'on peut appeler avec un nom. Lors des précédents TP, nous avons déjà utilisé des fonctions comme `print()`, `range()`, `random.randint()` ou bien `time.sleep()`. Une fonction permet d'abstraire du code, par exemple nous n'avons pas besoin de copier coller le code de la fonction `print()`, on peut juste l'appeler dans notre code.
 
 Imaginons que l'on veut appliquer plusieurs fois le même traitement à des variables. On va devoir dupliquer le code ce qui rend la lecture indigeste.
@@ -237,3 +239,67 @@ Sortie du terminal:
 ```bash
 15
 ```
+
+## Les fonction récursives
+
+Nous avons vu qu'une fonction doit être déclarée puis appelée.
+
+```python
+# declaration
+def my_function():
+	print("Hello")
+
+# appel
+my_function()
+```
+
+Cependant il est aussi possible qu'une fonction s'appelle elle-même. On parle alors de fonction récursive. Ce sont généralement des fonctions plus difficiles à coder car il s'agit de bien comprendre la logique de la fonction et certains cas d'applications ne sont pas fait pour être codés en récursif.
+
+On va s'intéresser au fait de calculer une somme des chiffres de 1 à n. Par exemple, si `n = 6`, la fonction devra calculer la somme suivante: `1 + 2 + 3 + 4 + 5 + 6`.
+
+Dans la méthode classique on fait une boucle de 1 à n inclus et à chaque itération on ajoute la valeur i au résultat. La variable i vaut 1 à la première itération, 2 à la deuxième, ...
+
+```python
+def sum_classic(n):
+    # resultat de la somme
+    result = 0
+    # iteration de i=1 à i=n inclus
+    for i in range(1, n + 1, 1):
+        # ajout de i au resultat
+        result += i
+    return result
+
+# 3 + 2 + 1 = 3
+print(sum_classic(3))
+```
+
+Dans la fonction récursive, elle va s'appeler elle-même.
+
+```python
+def sum_recursive(n):
+    # condition d'arret: si on arrive a 1 on ne peut plus appeler la fonction car on renvoie n
+    # sans cette condition on essayerait ensuite d'appeler sum_recursive(0), sum_recursive(-1), sum_recursive(-2), ...
+    # cela produirait une boucle d'appels infinie
+    if n == 1:
+        return n
+    # cas normal: on appelle sum_recursive avec n - 1
+    return n + sum_recursive(n - 1)
+
+# 3 + 2 + 1 = 3
+print(sum_recursive(3))
+```
+
+Voilà ce qui se passe étape par étape:
+
+- sum_recursive(3) appelle sum_recursive(2).
+- sum_recursive(2) appelle sum_recursive(1).
+- sum_recursive(1) renvoie 1 (condition d'arrêt). sum_recursive ne peut plus être appelée car on a renvoyé n.
+- sum_recursive(2) peut retourner 2 + 1 = 3
+- sum_recursive(3) peut retourner 3 + 3 = 6.
+
+A retenir:
+
+- Une fonction récursive est une fonction qui s'appelle elle-même.
+- On doit toujours définir une condition d'arrêt afin que la fonction ne s'appelle pas elle-même à l'infini.
+- Les fonctions récursives peuvent être très efficaces mais imposent une logique de code plus complexe.
+- Certains cas d'usages permettent peu l'écriture de fonctions récursives.
