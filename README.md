@@ -1,6 +1,6 @@
 # cs_course
 
-Ce projet vise a fournir quelques cours et travaux pratique afin d'apprendre à programmtion avec la langage python.
+Ce projet vise à fournir quelques cours et travaux pratiques afin d'apprendre à programmer avec python.
 
 ## Sommaire
 
