@@ -1,8 +1,8 @@
-# cs_course
+# :computer: cs_course
 
 Ce projet vise à fournir quelques cours et travaux pratiques afin d'apprendre à programmer avec python.
 
-## Sommaire
+## :green_book: Sommaire
 
 - [Introduction](./courses/01_intro.md)
 
