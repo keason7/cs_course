@@ -70,7 +70,7 @@ is_i_superior_to_j and is_i_inferior_to_j
 is_i_superior_to_j and is_i_inferior_to_j
 ```
 
-Voici un tableau récapitulatif.
+Voici un tableau récapitulatif.\
 ![image](./assets/05/logical_operators.png)
 
 ## Les conditions
