@@ -115,7 +115,3 @@ def draw(width, height, snake_coords, food_coords):
         print("|" + line + "|")
     print("=" * (width + 2))
 ```
-
-## Solution
-
-Afin de voir un projet avec plusieurs fichiers, la solution est visible [ici](../project/).
