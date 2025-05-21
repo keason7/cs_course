@@ -1,6 +1,6 @@
 # Les variables et les types
 
-Pour pouvoir donner des instructions à un ordinateur, il incombe au développeur d'écrire un algorithme. Un algorithme est une suite d'instructions logique. De façon similaire à une recette de cuisine, on les instructions sont exécutées ligne par ligne jusqu'à la fin du programme.
+Pour pouvoir donner des instructions à un ordinateur, il incombe au développeur d'écrire un algorithme. Un algorithme est une suite d'instructions logiques. De façon similaire à une recette de cuisine, les instructions sont exécutées ligne par ligne jusqu'à la fin du programme.
 
 ```python
 print("Bonjour")
@@ -8,7 +8,7 @@ print(5 * 4)
 print("Au revoir")
 ```
 
-Les lignes sont exécutées unes à unes:
+Les lignes sont exécutées unes à unes.
 
 ![image](./assets/03/algorithm_example.png)
 
@@ -21,7 +21,7 @@ a = 5
 print(a)
 ```
 
-Ici, on a stocké la valeur 5 dans la variable nommée `a`.
+Ici, on a stocké la valeur `5` dans la variable nommée `a`.
 
 On peut aussi stocker plusieurs valeurs et les manipuler.
 
@@ -65,14 +65,14 @@ plusieurs lignes.
 
 """ J'écris ici un commentaire sur une ligne. """
 
-# Stockage de la valeur dans a
+# stockage de la valeur dans a
 a = 5
-# Stockage de la valeur dans b
+# stockage de la valeur dans b
 b = 4
 
-# Multiplication de a et b et stockage dans c
+# multiplication de a et b et stockage dans c
 c = a * b
-# Affichage du résultat via la variable c
+# affichage du résultat via la variable c
 print(c)
 ```
 
@@ -90,6 +90,7 @@ Une autre manière plus courte de l'écrire.
 ```python
 # la valeur est 25.0
 age = 25.0
+
 # la valeur est 26.0
 age += 1
 
@@ -105,40 +106,41 @@ age *= 2
 
 ## Les types
 
-Les types permettent de catégoriser les valeurs contenues dans un algorithme. Il existe des types natifs à python et des types "custom" qui l'on peut créer nous même (cf. programmation orientée objet).
+Les types permettent de catégoriser les valeurs contenues dans les variables d'un algorithme. Il existe des types natifs à python et des types "custom" qui l'on peut créer nous même (cf. programmation orientée objet).
 
 Les types natifs principaux sont les suivant:
 
 ```python
 # int
-# représente les entiers: -1, -2, 0, 1, ...
+# represente les entiers: -1, -2, 0, 1, ...
 ma_variable = 5
 
 # float
-# représente les flottants: -1.0, -1.1, ..., 0.0, 0.1, ...
+# represente les flottants: -1.0, -1.1, ..., 0.0, 0.1, ...
 ma_variable = 5.0
 
 # complex
-# représente les nombres complexes
+# represente les nombres complexes
 ma_variable = complex(3, 5)
 
 # bool
-# représente les booléens (True ou False)
+# represente les booleens (True ou False)
 ma_variable = True
 
 # NoneType
-# représente les valeures null
+# represente les valeures null
 ma_variable = None
 
 # str (string)
-# représente les chaînes de caractère
+# represente les chaines de caractere
 ma_variable = "un texte"
 ```
 
-On peut afficher le type d'une variable par la fonction `type`.
+On peut afficher le type d'une variable par la fonction `type`. On reviendra sur le terme fonction (cf. fonctions) et le terme class (cf. programmation orientée objet) plus tard.
 
 ```python
 ma_variable = 5.0
+# <class 'float'>
 print(type(ma_variable))
 ```
 
@@ -172,13 +174,13 @@ identite = prenom + " " + nom
 On peut aussi afficher des strings dans le terminal.
 
 ```python
-# définitions des variables
+# definitions des variables
 prenom = "Ronald"
 nom = "Weasley"
 age = 25
 
 # meme message de 3 façons différentes
-print("Je m'appelle", prenom, nom, "et j'ai ", age, "ans.")
+print("Je m'appelle", prenom, nom, "et j'ai", age, "ans.")
 print("Je m'appelle " + prenom + " " + nom + " et j'ai " + str(age) + " ans.")
 print(f"Je m'appelle {prenom} {nom} et j'ai {age} ans.")
 ```
@@ -195,24 +197,29 @@ Voici quelques caractères spéciaux des chaînes de caractères:
 Voici les opérateurs principaux pour des valeures numériques
 
 ```python
-# on déclare deux variables
+# on declare deux variables
 i = 21
 j = 4
 
-# opération élémentaires
-# a chaque ligne la variable résultat est écrasée par une nouvelle valeur
+# operations elementaires
+# a chaque ligne la variable resultat est ecrasee par une nouvelle valeur
 resultat = i + j
 resultat = i - j
 resultat = i * j
 resultat = i / j
 
-# équivaut à 21⁴ = 194481
+# equivaut a 21⁴ = 194481
 resultat = i ** j
 
-# modulo, à savoir reste de la division euclidienne
+# modulo, resultat est le reste de la division euclidienne
 # 21 = 4 * 5 + 1
 # resultat vaut 1 ici
 resultat = i % j
+
+# resultat est le quotient de la division euclidienne
+# 21 = 4 * 5 + 1
+# resultat vaut 5 ici
+resultat = i // j
 ```
 
 Seules les variables numériques permettent l'utilisation de ces opérateurs.
