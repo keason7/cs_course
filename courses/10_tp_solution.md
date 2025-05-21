@@ -133,7 +133,7 @@ def get_guess(used_letters):
     # get user guess as lowercase
     user_guess = input("Proposez une lettre: ").lower()
 
-    # if input does not have 1 caracter or if input is not a letter
+    # if input does not have 1 character or if input is not a letter
     # print error message and return None
     if len(user_guess) != 1 or not user_guess.isalpha():
         print("❌ Entrez une seule lettre alphabétique.")
@@ -224,7 +224,7 @@ def hangman():
             # wait and clear terminal screen
             clear(sleep=2.0)
 
-            # dont't execute code after this
+            # don't execute code after this
             # we go back to while loop beginning
             continue
 
@@ -236,7 +236,7 @@ def hangman():
             # the user has found a letter
             print("✅ Bien joué !")
 
-            # since user has found a letter, we need to check if word has been completly found
+            # since user has found a letter, we need to check if word has been completely found
             if is_word_found(game_state["word"], game_state["used_letters"]):
                 # wait and clear terminal screen
                 clear(sleep=2.0)

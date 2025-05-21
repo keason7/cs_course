@@ -14,7 +14,7 @@ Le pendu est un jeu consistant à trouver un mot en devinant quelles sont les le
 
 - A chaque tour:
 
-  - Le mot avec seulement les lettres devinées sont affichées ainsi que la catégorie, les lettre précédemment utilisées et le nombre de vies.
+  - Le mot avec seulement les lettres devinées sont affichées ainsi que la catégorie, les lettres précédemment utilisées et le nombre de vies.
 
   - L'utilisateur choisit une lettre. La validité du choix est vérifiée. Si le choix est valide, on continue le code, sinon on redemande de choisir une lettre.
 
@@ -258,7 +258,7 @@ print(A & B)
 print(A.intersection(B))
 
 # difference des deux sets
-# on recuperes les valeurs de A qui ne sont pas dans B
+# on recupere les valeurs de A qui ne sont pas dans B
 # {3, 4, 5}
 print(A - B)
 print(A.difference(B))

@@ -1,61 +1,6 @@
 # TP Fractale
 
-## Solution 1.1
-
-```python
-from turtle import Screen, Turtle
-
-
-def initialize_screen(width, height):
-    screen = Screen()
-    screen.setup(width=width, height=height)
-
-    return screen
-
-
-def main():
-    screen = initialize_screen(width=1.0, height=1.0)
-
-    screen.mainloop()
-
-
-if __name__ == "__main__":
-    main()
-```
-
-## Solution 1.2
-
-```python
-from turtle import Screen, Turtle
-
-
-def initialize_screen(width, height):
-    screen = Screen()
-    screen.setup(width=width, height=height)
-
-    return screen
-
-
-def initialize_turtle(speed):
-    turtle = Turtle()
-    turtle.hideturtle()
-    turtle.speed(speed)
-
-    return turtle
-
-
-def main():
-    screen = initialize_screen(width=1.0, height=1.0)
-    turtle = initialize_turtle(speed=0)
-
-    screen.mainloop()
-
-
-if __name__ == "__main__":
-    main()
-```
-
-## Solution 1.3
+## Solution
 
 ```python
 from turtle import Screen, Turtle
@@ -123,7 +68,7 @@ def fractal_canopy(turtle, branch_length, branch_width, ratio, depth, angle):
 
 def main():
     screen = initialize_screen(width=1.0, height=1.0)
-    turtle = initialize_turtle(speed=1)
+    turtle = initialize_turtle(speed=0)
 
     # rotate de 90° pour dessiner l'arbre vers le haut de la fenetre
     turtle.left(90)

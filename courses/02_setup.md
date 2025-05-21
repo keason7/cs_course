@@ -141,7 +141,7 @@ print("Hello world")
 
 - Sélectionner un environnement et lancer le code avec l'icône flèche:
   - Avec base, le code crash car scikit-learn (bibliothèque non native) n'est pas installée.
-  - Avec my_new_env, le code s'éxecute.
+  - Avec my_new_env, le code s'exécute.
 
 ## Git
 

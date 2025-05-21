@@ -6,7 +6,7 @@
 def main():
     print("Bonjour")
 
-    # get user informations
+    # recupere les informations utilisateur
     prenom = input("Quel est votre prénom ?\n")
     nom = input("Quel est votre nom ?\n")
     age = input("Quel est votre age ?\n")
@@ -14,7 +14,7 @@ def main():
     hobbie = input("Quel est votre hobbie ?\n")
     orientation_politique = input("Quel est votre orientation politique ?\n")
 
-    # display user informations
+    # affiche les informations utilisateur
     print("\nMerci pour ces informations. Si je bien compris:")
     print(f"Vous vous appelez {prenom} {nom}")
     print(f"Vous avez {age} ans")

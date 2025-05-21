@@ -63,7 +63,7 @@ print(mon_chien.nom)
 |       | Avantages | Inconvénients |
 | ----- | --------- | ------------- |
 | POO   | Plus facile à modéliser des choses complexes (comme les jeux, les applications) <br> Regroupe les données et le comportement dans des objets séparés <br> Utile pour les grands programmes | Peut être plus difficile à comprendre au début <br> Nécessite plus de code pour des tâches simples           |
-| FP    | Code plus simple pour les petites tâches <br> Plus facile pour tester chaque fonction individuellement <br> Souvent plus rapide à écrire | Plus difficile à gérer pour les gros programmes|
+| FP    | Code plus simple pour les petites tâches <br> Plus facile pour tester chaque fonction individuellement <br> Souvent plus rapide à écrire | Plus difficile à gérer pour les gros programmes |
 
 Dans des cas d'usages réels, la plupart des programmes python utilisent les deux styles:
 

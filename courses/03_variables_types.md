@@ -287,5 +287,3 @@ __main__
 ```
 
 `__name__` est seulement égal à `"__main__"` pour le fichier exécuté directement mais vaudra une autre valeur pour les fichiers importés.
-
-## Exercice

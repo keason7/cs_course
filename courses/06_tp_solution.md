@@ -21,8 +21,7 @@ def main():
     # while the target age has not been found, do the loop
     while not age_found:
         # user choose an age
-        age_guess = input("Devinez l'âge...\n")
-        print()
+        age_guess = input("Devinez l'âge...\n\n")
 
         # convert str to float and then to int
         # if we convert directly to int the program crash when the user
