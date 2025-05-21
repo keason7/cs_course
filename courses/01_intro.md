@@ -31,7 +31,8 @@ Le développeur compile le code à l'aide d'un compilateur (traducteur entre lan
 
 Les étapes principales de la compilation sont les suivantes:
 
-- **Analyse lexicale et syntaxique**: Le code source est découpé en jetons et analysé grammaticalement pour vérifier sa structure et sa syntaxe
+- **Analyse lexicale et syntaxique**: Le code source est découpé en jetons et analysé grammaticalement pour vérifier sa structure et sa syntaxe.
+
 - **Analyse sémantique**: Le compilateur vérifie la cohérence du code source et s’assure qu’il respecte les règles sémantiques du langage.
 
 - **Optimisation du code**: Le compilateur applique des techniques d’optimisation pour améliorer les performances du code généré.
@@ -58,8 +59,7 @@ Les étapes principales de l'interprétation sont les suivantes:
 
 ### Le code binaire
 
-Un code binaire représente un texte, des instructions de processeur ou toute autre donnée utilisant un système à deux symboles. Le système à deux symboles (base 2) utilise des 0 et des 1. Le code binaire assigne une combinaison de chiffres binaires, également appelé bits, à chaque caractère, instruction, etc.
-Par exemple, une chaîne binaire de huit bits peut représenter n'importe laquelle des 255 valeurs possibles.
+Un code binaire représente un texte, des instructions de processeur ou toute autre donnée utilisant un système à deux symboles. Le système à deux symboles (base 2) utilise des 0 et des 1. Le code binaire assigne une combinaison de chiffres binaires, également appelé bits. Par exemple, une chaîne binaire de huit bits peut représenter n'importe laquelle des 255 valeurs possibles.
 
 ![image](./assets/01/binary_example.png)\
 Chaque 0 représente un bit. Chaque bit représente la valeur 0 ou 1 (ON ou OFF). On peut convertir n'importe quel chiffre en binaire.
@@ -80,7 +80,7 @@ Chaque 0 représente un bit. Chaque bit représente la valeur 0 ou 1 (ON ou OFF)
 
 ![image](./assets/01/hexa_example.png)
 
-Comme le binaire, on peut utiliser d'autres systèmes de représentation comme l'hexadécimal. Le binaire avait une `base 2 (0 ou 1)`, tandis que l'hexadécimal a une `base 16 (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)`. C'est un système intermédiaire avec le binaire pouvant simplifier la représentation d'un chiffre.
+Comme le binaire, on peut utiliser d'autres systèmes de représentation comme l'hexadécimal. Le binaire a une `base 2 (0 ou 1)`, tandis que l'hexadécimal a une `base 16 (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)`. C'est un système intermédiaire avec le binaire pouvant simplifier la représentation d'un chiffre.
 
 Prenons le binaire suivant:
 

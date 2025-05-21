@@ -16,7 +16,7 @@ Un fois installé, nous allons pouvoir installer les plugins nécessaires au dé
 
 ![image](./assets/02/vscode_plugins.png)
 
-Pour chacune des extensions suivantes, le télécharger et les installer:
+Pour chacune des extensions suivantes, la télécharger et l'installer:
 
 - **Python**: Gère le code python sous VSCode.
 - **isort**: Trie automatiquement les imports de librairies dans un fichier de code.
@@ -39,7 +39,19 @@ En informatique, lorsque que l'on écrit un programme, il est très courant d'ut
 
 Par exemple, si je veux programmer un algorithme de machine learning assez complexe, il est probable qu'une librairie existe avec une implémentation de cet algorithme. Au lieu de tout recoder, je peux installer cette librairie et avec accès aux différents algorithmes déjà développés. Cela permet de gagner du temps et d'utiliser des implémentations de code souvent robustes et efficaces.
 
-![image](./assets/02/lib_import.png)
+```python
+# import d'une bibliotheque (ou librairie) native de python
+import math
+
+# import d'une bibliotheque (ou librairie) de machine learning telechargee et installee
+import sklearn
+
+# utilisation de la fonction cosinus
+math.cos()
+
+# utilisation de la fonction KDTree
+sklearn.neighbors.KDTree()
+```
 
 ### Les environnements virtuels
 
