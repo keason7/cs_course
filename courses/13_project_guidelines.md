@@ -13,7 +13,7 @@ Le joueur contrôle un serpent, qui doit éviter de toucher les murs du terrain 
 - Menu du jeu. L'utilisateur peut quitter avec la touche escape ou jouer avec la touche p.\
   ![image](./assets/13/menu.png)
 
-- Lancement du jeu. Le serpent comment avec un taille et une direction. L'utilisateur peut changer la direction avec les touches &uarr; &darr; &larr; &rarr;. Un marqueur de nourriture est placé aléatoirement sur le terrain a une position ou le serpent n'y est pas. Si la tête du serpent touche la nourriture il grandit et une nouvelle nourriture est générée. Si la tête du serpent touche un mur ou son propre corps, l'utilisateur a perdu.\
+- Lancement du jeu. Le serpent commence avec une taille et une direction. L'utilisateur peut changer la direction avec les touches &uarr; &darr; &larr; &rarr;. Un marqueur de nourriture est placé aléatoirement sur le terrain a une position ou le serpent n'y est pas. Si la tête du serpent touche la nourriture il grandit et une nouvelle nourriture est générée. Si la tête du serpent touche un mur ou son propre corps, l'utilisateur a perdu.\
   ![image](./assets/13/snake_start.png)
 
 - Le serpent peut grandir de cette manière.\
@@ -39,7 +39,7 @@ Pour réaliser ce TP:
 
 - Le jeu doit être créé en full PF.
 
-On utilisera `keyboard.is_pressed` pour détecter qu'une touche est pressée. Contrairement a `input`, cette fonction n'attend pas que l'utilisateur ait validé avec entré, donc le code peut continuer de tourner.
+On utilisera `keyboard.is_pressed` pour détecter qu'une touche est pressée. Contrairement a `input`, cette fonction n'attend pas que l'utilisateur valide avec entrée, donc le code peut continuer de tourner.
 
 Quelques fonctions utiles.
 
