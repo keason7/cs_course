@@ -69,10 +69,22 @@ def is_even(x):
     # odd: remainder is 1
     return x % 2 == 0
 
+# stock et affiche la valeur renvoyee par return
+# True
+value_0 = is_even(0)
+print(value_0)
 
-print(is_even(0))
-print(is_even(1))
+# stock et affiche la valeur renvoyee par return
+# False
+value_1 = is_even(1)
+print(value_1)
+
+# affiche la valeur renvoyee par return
+# True
 print(is_even(2))
+
+# affiche la valeur renvoyee par return
+# False
 print(is_even(3))
 ```
 
@@ -147,7 +159,7 @@ def function_c(z):
 # la fonction function_a affiche un message et retourne None
 print(function_a())
 
-# la fonction function_b affiche un message et retourne 5 + 2
+# la fonction function_b affiche un message et retourne 2 auquel on ajoute 5
 print(5 + function_b(2))
 
 # la fonction function_c execute la fonction function_a
@@ -247,7 +259,8 @@ Nous avons vu qu'une fonction doit être déclarée puis appelée.
 ```python
 # declaration
 def my_function():
-	print("Hello")
+    print("Hello")
+
 
 # appel
 my_function()
@@ -269,7 +282,8 @@ def sum_classic(n):
         result += i
     return result
 
-# 3 + 2 + 1 = 3
+
+# 3 + 2 + 1 = 6
 print(sum_classic(3))
 ```
 
@@ -283,23 +297,37 @@ def sum_recursive(n):
     if n == 1:
         return n
     # cas normal: on appelle sum_recursive avec n - 1
-    return n + sum_recursive(n - 1)
+    # l'appel de la fonction est prioritaire a l'operation (addition)
+    somme = n + sum_recursive(n - 1)
+    return somme
 
-# 3 + 2 + 1 = 3
+
+# 3 + 2 + 1 = 6
 print(sum_recursive(3))
 ```
 
 Voilà ce qui se passe étape par étape:
 
-- sum_recursive(3) appelle sum_recursive(2).
-- sum_recursive(2) appelle sum_recursive(1).
-- sum_recursive(1) renvoie 1 (condition d'arrêt). sum_recursive ne peut plus être appelée car on a renvoyé n.
-- sum_recursive(2) peut retourner 2 + 1 = 3
-- sum_recursive(3) peut retourner 3 + 3 = 6.
+- sum_recursive(3) appelle sum_recursive(2). Le n == 1 n'est pas exécuté et la somme n'est pas encore calculée.
+
+- sum_recursive(2) appelle sum_recursive(1). Le n == 1 n'est pas exécuté et la somme n'est pas encore calculée.
+
+- sum_recursive(1) renvoie 1 (condition d'arrêt). sum_recursive(0) ne peut pas être appelée car on a renvoyé n.
+
+- On revient dans sum_recursive(2) vu sum_recursive(1) a fait return n. Le retour de sum_recursive(1) vaut 1 et n=2 donc on peut calculer la somme qui vaudra 2 + 1 = 3.
+
+- sum_recursive(2) retourne la somme qui vaut 3 à sum_recursive(3).
+
+- On revient dans sum_recursive(3) vu sum_recursive(2) a retourné 3. Le retour de sum_recursive(2) vaut 3 et n=3 donc on peut calculer la somme qui vaudra 3 + 3 = 6.
+
+- sum_recursive(3) retourne la somme qui vaut 6 au code principal.
 
 A retenir:
 
 - Une fonction récursive est une fonction qui s'appelle elle-même.
+
 - On doit toujours définir une condition d'arrêt afin que la fonction ne s'appelle pas elle-même à l'infini.
+
 - Les fonctions récursives peuvent être très efficaces mais imposent une logique de code plus complexe.
+
 - Certains cas d'usages permettent peu l'écriture de fonctions récursives.
