@@ -94,6 +94,8 @@ animal_2 = Animal()
 
 Ici, nous avons créé deux objets, deux instances de la classe Animal.
 
+:x: Un nom de classe commence toujours par une majuscule.
+
 Si on affiche le type de ces deux objets grâce à la fonction type, on voit que ces deux objets appartiennent bien à la classe Animal.
 
 ```python
@@ -275,9 +277,9 @@ Les `setters` permettent de modifier la valeur d’un attribut.
 
 En POO, on distingue différents types d’attributs:
 
-- Les attributs publics: Accessible qu’à l’intérieur de la définition de la classe.
+- Les attributs publics: Accessibles partout et toujours.
 - Les attributs protégés: Accessibles seulement pour la classe et ses classes filles (voir héritage). N'a pas beaucoup de sens en python.
-- Les attributs privés: Accessibles partout et toujours.
+- Les attributs privés: Accessible qu’à l’intérieur de la définition de la classe.
 
 Dans un langage comme le C++, cette différence public / privé est très stricte: les attributs privés ne sont pas accessibles.
 
