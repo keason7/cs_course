@@ -142,7 +142,7 @@ Jusque là, la valeur 122 (01111010 en binaire) pourrait vouloir dire:
 
 #### Comment l'ordinateur sait quel sens donner à 01111010 ?
 
-Eh bien il ne le sait pas. C'est le compilateur ou l'interpréteur qui le fait. Lors de la compilation ou de l'interprétation, qui choisit en fonction de ce que j'écris dans le code.
+Eh bien il ne le sait pas. C'est le compilateur ou l'interpréteur qui le fait. Lors de la compilation ou de l'interprétation, le programme de traduction choisit le contexte en fonction de ce qui est écrit dans le code.
 
 Par exemple:
 
