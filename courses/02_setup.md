@@ -161,7 +161,7 @@ En informatique, il est très courant et presque obligatoire d'utiliser Git. Git
 
 ### Fonctionnement
 
-![image](./assets/02/git_states.svg)
+![image](./assets/02/git_states.jpg)
 
 Dans la majeure partie des cas, on travaille avec une version du code en local sur un PC et avec une version sur un serveur distant. L'utilisateur peut travailler sur sa version locale et l'envoyer ensuite sur la version distante pour la mettre à jour. De plus, si plusieurs personnes travaillent sur le même projet, l'utilisateur peut récupérer les nouvelles modifications sur le répertoire distant en local. Lorsque l'on parle d'un projet Git, on utilise le terme dépôt en français et repository en anglais.
 
@@ -203,7 +203,7 @@ Télécharge les modifications les plus récentes du dépôt distant comme git f
 
 ![image](./assets/02/git_branches.jpg)
 
-Une autre fonctionnalité de Git est de pouvoir travailler sous plusieurs versions parallèles du code et cela à plusieurs. Dans tout projet Git on dispose de la branche principale appelée Master (ou main).
+Une autre fonctionnalité de Git est de pouvoir travailler sous plusieurs versions parallèles du code et cela à plusieurs. Dans tout projet Git on dispose de la branche principale appelée master (ou main).
 
 Cette branche est censée toujours contenir une version stable du code. Lorsqu'un développeur veut ajouter une fonctionnalité, il peut créer une nouvelle branche à partir d'un commit donné. Le développeur fait donc des modifications (commit et push) sur sa branche sans impacter la branche principale. Lorsque la nouvelle fonctionnalité est prête, il peut alors la merge avec la branche principale et les deux branches fusionnent.
 
@@ -215,7 +215,7 @@ Cela permet de :
 
 ### Installation
 
-GitHub est un service en ligne qui permet d’héberger des dépôts ou repo Git. C’est le plus grand hébergeur de dépôts Git du monde.
+GitHub est un service en ligne qui permet d’héberger des dépôts ou repository (repo) Git. C’est le plus grand hébergeur de dépôts Git.
 
 Une grande partie des dépôts hébergés sur GitHub sont publics, ce qui signifie que n’importe qui peut télécharger le code de ces dépôts et contribuer à leur développement en proposant de nouvelles fonctionnalités.
 
