@@ -8,27 +8,27 @@ Pour comparer des variables on peut utiliser des opérateurs de comparaison.
 i = 20
 j = 10
 
-# test si i est supérieur à j
+# test si i est superieur à j
 # produit la valeur True de type bool
 i > j
 
-# test si i est supérieur ou égal à j
+# test si i est superieur ou egal à j
 # produit la valeur True de type bool
 i >= j
 
-# test si i est inférieur à j
+# test si i est inferieur à j
 # produit la valeur False de type bool
 i < j
 
-# test si i est inférieur ou égal à j
+# test si i est inferieur ou egal à j
 # produit la valeur False de type bool
 i <= j
 
-# test si i est égal à j
+# test si i est egal à j
 # produit la valeur False de type bool
 i == j
 
-# test si i est différent de j
+# test si i est different de j
 # produit la valeur True de type bool
 i != j
 ```
@@ -60,13 +60,13 @@ is_i_inferior_to_j = i < j
 
 
 # not inverse la valeur de la variable
-# si la variable vaut True, alors cette assertion vaudra False
+# si la variable vaut True, alors l'operation logique vaudra False
 not is_i_superior_to_j
 
-# l'assertion vaut True si les deux variables sont à True
+# l'operation logique vaut True si les deux variables sont à True
 is_i_superior_to_j and is_i_inferior_to_j
 
-# l'assertion vaut True si au moins une des deux variables (ou les deux) est à True
+# l'operation logique vaut True si au moins une des deux variables (ou les deux) est à True
 is_i_superior_to_j and is_i_inferior_to_j
 ```
 
@@ -103,7 +103,7 @@ if i > j:
     print("i est plus grand que j")
 ```
 
-Ou bien des blocs imbriqués.
+Des blocs imbriqués.
 
 ```python
 i = 20
@@ -111,8 +111,21 @@ j = 10
 
 if i > j:
     print("i est plus grand que j")
-    if i == 10:
-        print("i vaut 10")
+    if i == 20:
+        print("i vaut 20")
+```
+
+Ou bien des if à la suite.
+
+```python
+i = 20
+j = 10
+
+if i > j:
+    print("i est plus grand que j")
+
+if i == 20:
+    print("i vaut 20")
 ```
 
 ## Les boucles
@@ -122,7 +135,7 @@ if i > j:
 La boucle for exécute le code un nombre de fois défini. En programmation, il est au final assez rare de ne pas savoir à l'avance combien de fois une action doit être répétée, c'est pourquoi c'est le type de boucle le plus utilisé.
 
 ```python
-# Pour i allant de 0 à 4 avec un pas de 1
+# pour i allant de 0 a 4 avec un pas de 1
 # i va valoir 0, puis 1, puis 2, puis 3, puis 4
 for i in range(0, 5, 1):
     # afficher la valeur de i
@@ -186,7 +199,7 @@ while True:
 
 ### break et continue
 
-Avec le mot clé on peut forcer le fait de sortir d'une boucle (`for`, `while`).
+Avec le mot clé `break` on peut forcer le fait de sortir d'une boucle (`for`, `while`).
 
 ```python
 for i in range(5):
@@ -216,11 +229,11 @@ n vaut 2
 
 ---
 
-Avec continue, on peut passer une itération d'une boucle (`for` ou `while`).
+Avec le mot clé `continue`, on peut passer une itération d'une boucle (`for` ou `while`).
 
 ```python
 for i in range(5):
-    # si i vaut 3, for n'execute pas le code après le if, et on passe directement à l'itération de boucle suivante
+    # si i vaut 3, for n'execute pas le code après le if, et on passe directement à l'iteration de boucle suivante
     if i == 3:
         continue
     print(f"i vaut {i}")
