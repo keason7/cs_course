@@ -29,8 +29,8 @@ print(mon_tuple + (5, 6))
 print(mon_tuple[1:2])
 
 # coupe le tuple (slice)
-# affiche ('Ronald', 3.0)
-print(mon_tuple[1:3])
+# affiche (2, 'Ronald')
+print(mon_tuple[0:2])
 
 # coupe le tuple (slice)
 # affiche (2,)
@@ -313,6 +313,13 @@ for index in range(len(s)):
 for char in s:
     if char == "b" or char == "u":
         print("There is an b or u")
+```
+
+Même sortie dans le terminal.
+
+```bash
+There is an b or u
+There is an b or u
 ```
 
 ## Le slicing
