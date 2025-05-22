@@ -4,46 +4,58 @@ Ce projet vise à fournir quelques cours et travaux pratiques afin d'apprendre �
 
 ## :green_book: Sommaire
 
-- [**Introduction**](./courses/01_intro.md)
+1. [**Introduction**](./courses/01_intro.md)
 
-- [**Setup**](./courses/02_setup.md)
+2. [**Setup**](./courses/02_setup.md)
 
-- [**Variables et types**](./courses/03_variables_types.md)
+---
 
-- **TP Qui suis-je ?**
+3. [**Variables et types**](./courses/03_variables_types.md)
 
-  - [**Exercice**](./courses/04_tp_guidelines.md)
-  - [**Solution**](./courses/04_tp_solution.md)
+4. **TP Qui suis-je ?** :eyes:
 
-- [**Les conditions et les boucles**](./courses/05_conditions_loops.md)
+   - [**Exercice**](./courses/04_tp_guidelines.md)
+   - [**Solution**](./courses/04_tp_solution.md)
 
-- **TP Devine mon âge**
+---
 
-  - [**Exercice**](./courses/06_tp_guidelines.md)
-  - [**Solution**](./courses/06_tp_solution.md)
+5. [**Les conditions et les boucles**](./courses/05_conditions_loops.md)
 
-- [**Les fonctions**](./courses/07_functions.md)
+6. **TP Devine mon âge** :question:
 
-- **TP Fractale**
+   - [**Exercice**](./courses/06_tp_guidelines.md)
+   - [**Solution**](./courses/06_tp_solution.md)
 
-  - [**Exercice**](./courses/08_tp_guidelines.md)
-  - [**Solution**](./courses/08_tp_solution.md)
+---
 
-- [**Listes, tuples et dictionnaires**](./courses/09_lists_tuples_dictionaries.md)
+7. [**Les fonctions**](./courses/07_functions.md)
 
-- **TP Jeu du pendu**
+8. **TP Fractale** :herb:
 
-  - [**Exercice**](./courses/10_tp_guidelines.md)
-  - [**Solution**](./courses/10_tp_solution.md)
+   - [**Exercice**](./courses/08_tp_guidelines.md)
+   - [**Solution**](./courses/08_tp_solution.md)
 
-- [**La programmation orientée objet**](./courses/11_programmation_objet.md)
+---
 
-- **TP Jeu du tic tac toe**
+9. [**Listes, tuples et dictionnaires**](./courses/09_lists_tuples_dictionaries.md)
 
-  - [**Exercice**](./courses/12_tp_guidelines.md)
-  - [**Solution**](./courses/12_tp_solution.md)
+10. **TP Jeu du pendu** :pencil:
 
-- **Projet Snake**
+    - [**Exercice**](./courses/10_tp_guidelines.md)
+    - [**Solution**](./courses/10_tp_solution.md)
 
-  - [**Exercice**](./courses/13_project_guidelines.md)
-  - [**Solution**](./courses/13_project_solution.md)
+---
+
+11. [**La programmation orientée objet**](./courses/11_programmation_objet.md)
+
+12. **TP Jeu du tic tac toe** :heavy_multiplication_x: :o:
+
+    - [**Exercice**](./courses/12_tp_guidelines.md)
+    - [**Solution**](./courses/12_tp_solution.md)
+
+---
+
+13. **Projet Snake** :snake:
+
+    - [**Exercice**](./courses/13_project_guidelines.md)
+    - [**Solution**](./courses/13_project_solution.md)
